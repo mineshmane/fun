@@ -1,0 +1,26 @@
+<p>login works!</p>
+<h2>this login component</h2>
+<!-- this function will once click on next button  -->
+<form [formGroup]="registerForm" (ngSubmit)="loginMethod()">
+
+  <div>
+    <div>
+    <mat-form-field appearance="outline">
+      <mat-label>email</mat-label>
+      <input formControlName="email" matInput placeholder="email">
+      <mat-error>email is required</mat-error>
+
+      
+    </mat-form-field>
+  </div><div>
+
+    <mat-form-field appearance="outline">
+      <mat-label>password</mat-label>
+      <input formControlName="password" matInput placeholder="password">
+      <mat-error>password is required</mat-error>
+    </mat-form-field>
+  </div>
+    <button mat-raised-button color="primary">Next</button>
+
+  </div>
+</form>

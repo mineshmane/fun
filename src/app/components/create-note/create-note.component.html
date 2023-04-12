@@ -1,0 +1,28 @@
+<p>this create note component</p>
+
+
+<div style="display: flex;justify-content: center;align-items: center;">
+    <div class="create-note">
+        <div style="width: 100%;" *ngIf="hide||!hide" (click)="showFullview()">
+            <input [(ngModel)]="title" style="width: 98%; height: 50px; border: none;" type="text" placeholder="title">
+        </div>
+        <div style="width: 100%;" *ngIf="hide">
+            <input [(ngModel)]="description" style="width: 98%;height: 50px; border: none;" type="text"
+                placeholder="descrption">
+<div style="display: flex;justify-content: space-between;">
+    <app-ions></app-ions>
+
+
+    <button mat-raised-button color="primary" (click)="createNote()">close</button>
+
+</div>
+  
+
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- directive  -->

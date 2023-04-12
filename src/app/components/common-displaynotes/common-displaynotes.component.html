@@ -1,0 +1,15 @@
+<div style="display: flex; flex-direction: row;flex-wrap: wrap">
+    <div *ngFor="let note of NoteListArray | filternote:searchValue" [style.background-color]="note.color"
+        style="width: 240px;margin: 10px;height:150px; border: 1px solid black;">
+        <div>
+            {{note?.title}}
+        </div>
+        <div>
+            {{note?.description | uppercase}}
+        </div>
+
+        <app-ions></app-ions>
+
+    </div>
+
+</div>

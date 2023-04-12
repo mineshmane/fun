@@ -1,0 +1,12 @@
+<div style="display: flex; flex-direction: row;">
+    <div *ngFor="let note of NotesListArray | filter:searchValue"
+        style=" width: 240px; border:1px solid grey;height: 150px;margin: 10px; ">
+        <div>
+            {{note?.titlel}}
+        </div>
+        <div>
+            <h1>{{note?.description}}</h1>
+        </div>
+        <app-ions></app-ions>
+    </div>
+</div>

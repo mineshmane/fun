@@ -1,0 +1,58 @@
+<form [formGroup]="registerForm" (ngSubmit)="signup()">
+
+    <div class="con">
+        <mat-card class="cards">
+            <div class="form-felid" >
+                <div class="namepass form-felid">
+                    <mat-form-field class="form-felid" appearance="outline">
+                        <mat-label>firstname</mat-label>
+                        <input formControlName="email" matInput placeholder="email">
+                        <mat-error>email is required</mat-error>
+
+
+                    </mat-form-field>
+                    <mat-form-field class="form-felid" appearance="outline">
+                        <mat-label>lastname</mat-label>
+                        <input formControlName="email" matInput placeholder="email">
+                        <mat-error>email is required</mat-error>
+
+
+                    </mat-form-field>
+                </div>
+                <div class="form-felid-email">
+                    <mat-form-field  class="form-felid-email" appearance="outline">
+                        <mat-label>email</mat-label>
+                        <input formControlName="email" matInput placeholder="email">
+                        <mat-error>email is required</mat-error>
+
+
+                    </mat-form-field>
+                </div>
+                <div class="namepass form-felid"  >
+
+                    <mat-form-field class="form-felid" appearance="outline">
+                        <mat-label>password</mat-label>
+                        <input formControlName="password" matInput placeholder="password">
+                        <mat-error>password is required</mat-error>
+                    </mat-form-field>
+                    <mat-form-field class="form-felid" appearance="outline">
+                        <mat-label>confirm password</mat-label>
+                        <input formControlName="password" matInput placeholder="password">
+                        <mat-error>password is required</mat-error>
+                    </mat-form-field>
+                </div>
+                <div style="display: flex;flex-direction: row;justify-content: space-between;">
+                    <span>Creare account</span>
+                <button mat-raised-button color="primary">Next</button>
+
+
+                </div>
+
+            </div>
+        </mat-card>
+        <div class="image">
+            image
+        </div>
+    </div>
+
+</form>
